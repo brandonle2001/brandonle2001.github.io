@@ -1,7 +1,115 @@
 <!DOCTYPE html>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<head>
+	<title>StudioBLE</title>
+	
+	<meta name="description" content="All the way from Texas A&M Univeristy, welcome to StudioBLE, a place to view projects, stories, and more projects created by me, Brandon Le!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="StudioBLE, Projects, Journal, Brandon, Le">
+    
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="main.css?version=101"/>
+    
+    <script src="studioble.js"></script>
+	<script src="rsrc/jquery-3.4.1.min.js"></script>
+	
+	<style>
+    body {opacity: 1;transition: 1s opacity;}
+    
+    body.fade-out {opacity: 0;transition: none;}
+    
+    #home_involve img{
+        width: 10%;
+        margin: 0;
+        padding: 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    </style>
+    
+	<script>
+		$(function(){
+		    $("#myTopnav").load("rsrc/navbar.html");
+		    $("#social-media").load("rsrc/sm.html");
+		    $("#footer-content").load("rsrc/footer.html");
+		    $('body').removeClass('fade-out');
+		});
+	</script>
+    
+</head>
+
+<body onload="typeWriter()">
+    <script>document.body.className += ' fade-out';</script>
+	<div class="navbar" id="myTopnav"></div>
+
+	<div class="slider">
+		<div style="height:50px"><p id="typer" class="no-select"></p></div>
+	</div>
+	<div class="cblock" style="text-align:center; background: #2F3436;">
+		<h1>Howdy!</h1>
+		<p>My name is Brandon Le! I'm a Mays Business Honors Student at Texas A&amp;M University.</p>
+		<p>This <strong>made-from-scratch</strong> website is a landing base for all my projects, journal posts, and more!</p>
+	</div>
+	
+
+	<div class="cblock" style="text-align:center;background:#181C1E;">
+		
+		<ul class="home-bar">
+			<hr style="width:70%; border-top: 1px solid #c0e0de;"/>
+			<li><a href="projects"><img src="img/pjico.png" /></a></li>
+			<li><a href="about"><img src="img/abico.png" /></a></li>
+			<li><a href="journal"><img src="img/jnico.png"/></a></li>
+			<hr style="width:70%; border-top: 1px solid #c0e0de;"/>
+		</ul>
+	</div>
+	
+	<div class="cblock" style="background: #172a3a; color: white;text-align:center;">
+	    <h3 style="padding: 0; margin: 0;">My Involvement</h3>
+	    <ul class="home-bar" id="home_involve" style="background-color: transparent;">
+	        <li><a href="https://alot.tamu.edu/" target="_blank"><img src="img/proj_img/mscalot_logo.png" /></a></li>
+			<li><a href="https://www.tedxtamu.com/" target="_blank"><img src="img/proj_img/tedx_logo.png" /></a></li>
+			<li><a href="https://www.deca.org/" target="_blank"><img src="img/proj_img/sq_deca.png" /></a></li>
+			<li><a href="https://mays.tamu.edu/" target="_blank"><img src="img/proj_img/mbs_logo.png" /></a></li>
+			<li><a href="https://sga.tamu.edu/" target="_blank"><img src="img/proj_img/SGA_logo.png" /></a></li>
+		</ul>
+	</div>
+
+	<div class="cblock" style="text-align:center; background-color: #2F3436;">
+		<h2>What's StudioBLE?</h2>
+		<p style="margin-left: 5%; margin-right: 5%;">StudioBLE is a personal portfolio and collection of projects, reflections, and ideas I've had over the years. I love sharing my work and talking about topics that can help others and spark creativity and motivation. My hope is that by sharing some of my success and ideas, I'll inspire others to celebrate their own success and shrare their own stories.</p>
+		<br>
+		<img src="img/coupleam.jpg" alt="A picture of me and my love :)" style="max-height:200px;"/>
+		<p>Me and my Amazing Girlfriend, Demi Waworuntu!</p>
+		<p id = "love" onclick="heart(this)" class="no-select">3.30.2017</p>
+		<br>
+		<h3 onclick="canek(this)" id="tamutitle" class="no-select">Thanks and Gig'Em!</h3>
+	</div>
+	
+
+	<script>
+		function canek(x) {
+			if (x.innerHTML == "Thanks and Gig'Em!") {
+				x.innerHTML = "Hulabaloo Canek Canek!";
+			} else {
+				x.innerHTML = "Thanks and Gig'Em!";
+			}
+		}
+
+		function heart(x) {
+		  if (x.innerHTML == "3.30.2017") {
+				x.innerHTML = "I Love You Demi <3";
+			} else {
+				x.innerHTML = "3.30.2017";
+			}
+		}
+	</script>
+
+	<div id="social-media"></div>
+
+	<div id="footer-content"></div>
 </body>
 </html>
