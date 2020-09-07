@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+/* Scrollbar Adjustments */
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #f1f1f1; }
+::-webkit-scrollbar-thumb {background: #888; }
+::-webkit-scrollbar-thumb:hover {background: #555; }
+
 body {
     
     background-color: #312c2d;
@@ -39,7 +45,7 @@ button {
     color: white;
     padding-right:20px;
     padding-left:20px;
-    transition: background 0.5s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 
 button:hover {
@@ -48,4 +54,20 @@ button:hover {
 
 #navlist li {
     display:inline-block;
+}
+
+section {
+    text-align: center;
+    padding: 15px;
+    background-color: #443f40;
+
+    margin-right: 15%;
+	margin-left: 15%;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        margin:0px;
+        margin-left:0px;
+    }
 }
