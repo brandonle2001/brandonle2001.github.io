@@ -59,10 +59,10 @@ button:hover {
 section {
     text-align: center;
     padding: 15px;
-    background-color: #443f40;
+    
 
-    margin-right: 15%;
-	margin-left: 15%;
+    margin-right: 10%;
+	margin-left: 10%;
 }
 
 @media screen and (max-width: 1000px) {
