@@ -19,7 +19,7 @@ body {
 }
 
 nav {
-    background-color: #443f40;
+    background-color:#242323;
     text-align: center;
     height: 50px;
     margin: 0px;
@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-    background: #172a3a;
+    background: #443f40 ;
 }
 
 #navlist li {
@@ -63,6 +63,25 @@ section {
 
     margin-right: 10%;
 	margin-left: 10%;
+}
+
+footer {
+    background-color: #242323;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 0px;
+    width:100%;
+
+}
+
+.sm_logo {
+    width:20px;
+}
+
+#social_media li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 @media screen and (max-width: 1000px) {
