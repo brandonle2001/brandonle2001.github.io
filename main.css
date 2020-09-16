@@ -38,7 +38,7 @@ nav {
     padding: 20px;
 }
 
-#navlist button {
+button {
     border: none;
     background: none;
     color: white;
@@ -91,7 +91,10 @@ footer {
 
 .org_logo {
     width: 100px;
-}
+    transition: transform .2s;
+} 
+
+.org_logo:hover {transform:scale(1.2);}
 
 @media screen and (max-width: 1000px) {
     section {
