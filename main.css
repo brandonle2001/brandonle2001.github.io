@@ -10,12 +10,15 @@
 ::-webkit-scrollbar-thumb:hover {background: #555; }
 
 body {
-    
-    background-color: #312c2d;
+    background-color: #3c474b;
     color: white;
     font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
+}
+
+header {
+    padding: 5px;
 }
 
 nav {
@@ -36,6 +39,8 @@ nav {
     background-color: #AFBFC0;
     text-align: center;
     padding: 20px;
+    background-image: url(rsc/sliderbackground.png);
+    background-size: 800px;
 }
 
 button {
@@ -61,6 +66,11 @@ section {
 
     margin-right: 10%;
 	margin-left: 10%;
+}
+
+.page_title {
+    margin-right: 0;
+	margin-left: 0;
 }
 
 footer {
