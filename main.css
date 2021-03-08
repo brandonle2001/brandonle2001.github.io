@@ -13,21 +13,47 @@
 body {
     background-color: #3c474b;
     color: #eeeeee;
-    font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 header {
-    padding: 5px;
+    padding-top: 5px;
 }
 
 nav {
-    background-color:#242323;
     text-align: center;
-    height: 50px;
     margin: 0px;
 }
+
+#navlist {
+	background-color:#242323;
+}
+
+#navlist li {
+    display:inline-block;
+}
+
+#navlist p {
+	line-height: 50px;
+}
+
+#smlist {
+	background-color: #2F3436;
+	padding-top: 10px;
+}
+
+#smlist li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#smlist img {
+	width:20px;
+}
+
 
 #title {
     text-align: center;
@@ -57,10 +83,6 @@ button:hover {
     background: #443f40 ;
 }
 
-#navlist li {
-    display:inline-block;
-}
-
 section {
     text-align: center;
     padding: 15px;
@@ -81,16 +103,6 @@ footer {
     bottom: 0px;
     width:100%;
 
-}
-
-.sm_logo {
-    width:20px;
-}
-
-#social_media li {
-    display: inline-block;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 #organizations li {
