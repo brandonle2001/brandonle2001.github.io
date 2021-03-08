@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6;
+}
+
+/* Scrollbar Adjustments */
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #f1f1f1; }
+::-webkit-scrollbar-thumb {background: #888; }
+::-webkit-scrollbar-thumb:hover {background: #555; }
+
+body {
+    background-color: #3c474b;
+    color: #eeeeee;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding-top: 5px;
+}
+
+nav {
+    text-align: center;
+    margin: 0px;
+}
+
+#navlist {
+	background-color:#242323;
+}
+
+#navlist li {
+    display:inline-block;
+}
+
+#navlist p {
+	line-height: 50px;
+}
+
+#smlist {
+	background-color: #2F3436;
+	padding-top: 10px;
+}
+
+#smlist li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#smlist img {
+	width:20px;
+}
+
+
+#title {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#slider {
+    background-color: #AFBFC0;
+    text-align: center;
+    padding: 20px;
+    background-image: url(rsc/sliderbackground.png);
+    background-size: 800px;
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+    padding-right:20px;
+    padding-left:20px;
+    transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #443f40 ;
+}
+
+section {
+    text-align: center;
+    padding: 15px;
+
+    margin-right: 10%;
+	margin-left: 10%;
+}
+
+.page_title {
+    margin-right: 0;
+	margin-left: 0;
+}
+
+footer {
+    background-color: #242323;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 0px;
+    width:100%;
+
+}
+
+#organizations li {
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.org_logo {
+    width: 100px;
+    transition: transform .2s;
+} 
+
+.org_logo:hover {transform:scale(1.2);}
+
+@media screen and (max-width: 1000px) {
+    section {
+        margin:0px;
+        margin-left:0px;
+    }
+}
+
+.careerbox p {
+    text-align: left;
+}
