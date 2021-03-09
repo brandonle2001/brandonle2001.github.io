@@ -1,0 +1,12 @@
+- name: Instagram
+  link: https://www.instagram.com/Le.Brandon.T/
+  img: /assets/images/sm-icons/instagram.png
+- name: LinkedIn
+  link: https://www.Linkedin.com/in/BrandonLe01/
+  img: /assets/images/sm-icons/linkedin.png
+- name: Twitter
+  link: https://www.Twitter.com/LeBrandonT/
+  img: /assets/images/sm-icons/twitter.png
+- name: Github
+  link: https://www.github.com/brandonle2001/
+  img: /assets/images/sm-icons/github.png

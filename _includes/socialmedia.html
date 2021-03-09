@@ -1,0 +1,5 @@
+<nav style="background-color:#2F3436; padding-top: 5px;">
+    {% for item in site.data.socialmedia %}
+      <a href="{{ item.link }}" target="_blank"><img src="{{ item.img }}" alt="{{ item.name }}" /></a>
+    {% endfor %}
+</nav>
