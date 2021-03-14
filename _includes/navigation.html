@@ -1,10 +1,10 @@
 <nav style="background-color:#242323;">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}"><button {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</button></a>
+      <a href="{{ item.link }}"><button {% if page.url == item.link and page.url != "/comingsoon.html" %}class="current"{% endif %}>{{ item.name }}</button></a>
     {% endfor %}
 </nav>
 
-<nav style="background-color:#2F3436; padding-top: 5px;">
+<nav style="background-color:#2F3436; padding: 5px;">
   {% for item in site.data.socialmedia %}
     <a href="{{ item.link }}" target="_blank"><img src="{{ item.img }}" alt="{{ item.name }}" /></a>
   {% endfor %}

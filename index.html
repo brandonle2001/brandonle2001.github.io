@@ -3,4 +3,44 @@ layout: default
 title: Brandon Le | Home
 ---
 
-<h1>Hello World!</h1>
+<section class="sliders" style="background-image: url(/assets/images/sliderbg.jpeg);">
+    <h1>Hello World!</h1>
+    <p>Hello World again!</p>
+</section>
+
+<section class="text-sec" id="home1" style="background-color: #2F3436;">
+    <h1>Howdy!</h1>
+    <p style="font-size: 16px;">I'm Brandon Le, a Management Information Systems student at Texas A&M Univeristy.
+        <br><br>
+        This website is a portfolio of projects and experiences I've had throughout my academic career,
+        as well as a blog about things in life I am passionate about. At the end of the day, my hope is that
+        this website can teach, inspire, or entertain others about the things I find interesting.
+        <br><br>
+        I enjoy learning and talking about about new technology and innnovations, finance (<em>stonks</em>), college and education,
+        recruiting and internships, and a bunch of other, unrelated topics (pets, food, Texas A&M, Texas in general).
+    </p>
+</section>
+
+<section class="text-sec" style="background-color: #1a1919;">
+    <nav>
+        {% for item in site.data.organizations %}
+            <a href="{{ item.link }}" target="_blank"><img src="{{ item.img }}" alt="{{ item.name }}" class="org_img"/></a>
+        {% endfor %}
+        
+    </nav>
+    <p>Throughout high school and college, I've been given the amazing privilege to serve and be a part of several amazing
+        organizations which have helped build my learning and leadership. Above are only a few of them:</p>
+        <p>To learn more about my involvement, you can click <a href="comingsoon.html" style="color:white;"><strong>here</strong></a></p>
+</section>
+
+<section class="text-sec" style="background-color: #2F3436;">
+    <h1>Certifications</h1>
+    <p>Below are a couple of certifications I've earned from CompTIA, a national organization which focuses on
+    Information Technology (IT) industry education.</p>
+    <div style="background-color:white; width: 80%; margin:auto; padding: 10px;">
+        {% for item in site.data.comptiabadges %}
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="{{ item.id }}" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+        {% endfor %}
+    </div>
+    
+</section>
