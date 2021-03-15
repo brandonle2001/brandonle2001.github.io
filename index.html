@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Brandon Le | Home
+title: Home | Brandon Le
+
 ---
 
 <section class="sliders" style="background-image: url(/assets/images/sliderbg.jpeg);">
-    <h1>Hello World!</h1>
-    <p>Hello World again!</p>
+    <div class="typewriter" style="width:min-content; margin-left: auto; margin-right: auto; padding: 50px 0;">
+        <h1>Welcome! </h1>
+    </div>
 </section>
 
 <section class="text-sec" id="home1" style="background-color: #2F3436;">
@@ -21,15 +23,17 @@ title: Brandon Le | Home
     </p>
 </section>
 
+<img src="/assets/images/hp1.png" class="text-sec" style="width:80%; padding: 0; margin-bottom: -5px;">
+
 <section class="text-sec" style="background-color: #1a1919;">
+    <p>Throughout high school and college, I've been given the amazing privilege to serve and be a part of several amazing
+        organizations which have helped build my learning and leadership. Above are only a few of them:</p>
     <nav>
         {% for item in site.data.organizations %}
             <a href="{{ item.link }}" target="_blank"><img src="{{ item.img }}" alt="{{ item.name }}" class="org_img"/></a>
         {% endfor %}
         
     </nav>
-    <p>Throughout high school and college, I've been given the amazing privilege to serve and be a part of several amazing
-        organizations which have helped build my learning and leadership. Above are only a few of them:</p>
         <p>To learn more about my involvement, you can click <a href="comingsoon.html" style="color:white;"><strong>here</strong></a></p>
 </section>
 

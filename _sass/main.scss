@@ -66,9 +66,10 @@ footer {
   background-repeat: no-repeat;
   height: 300px;
   margin: 0;
+  text-align: center;
 }
 
-section {
+.text-sec {
   padding: 10px;
   margin-left: 10%;
   margin-right: 10%;
@@ -83,6 +84,12 @@ section {
 
 .org_img:hover {transform:scale(1.2);}
 
+.pagehead {
+  font-size: 36px;
+  margin: 0;
+  padding: 80px;
+}
+
 /*Needs to stay at the bottom*/
 @media screen and (max-width: 1000px) {
   section {
@@ -90,3 +97,4 @@ section {
       margin-left:0px;
   }
 }
+
