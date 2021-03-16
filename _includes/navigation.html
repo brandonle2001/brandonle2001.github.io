@@ -1,7 +1,17 @@
 <nav style="background-color:#242323;">
-    {% for item in site.data.navigation %}
+    <!--{% for item in site.data.navigation %}
       <a href="{{ item.link }}"><button {% if page.url == item.link and page.url != "/comingsoon.html" %}class="current"{% endif %}>{{ item.name }}</button></a>
-    {% endfor %}
+    {% endfor %}-->
+    
+    <a href="/"><button>Home</button></a>
+    <a href="/comingsoon"><button>Posts</button></a>
+    <div class="dropdown">
+      <a href="/about"><button>About</button></a>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="/assets/files/PublicResume_BL.pdf" target="_blank"><button>Resume</button></a>
+        <a href="/comingsoon"><button>Involvement</button></a>
+      </div>
+    </div>
 </nav>
 
 <nav style="background-color:#2F3436; padding: 5px;">
