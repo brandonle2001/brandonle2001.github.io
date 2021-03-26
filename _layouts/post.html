@@ -4,12 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- For Social Media Sharing -->
-    <meta property="og:image" content="/assets/images/socialscreen.jpg" />
-    <meta property="og:description" content="Welcome to my portfolio of projects and posts!" />
-    <meta property="og:title" content="Brandon Le" />
-
-    <title>{{ page.title }} | Brandon Le</title>
+    <title>{{ page.title }} | Posts | Brandon Le</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <!-- Favicon Setup -->
@@ -26,7 +21,13 @@
     {% include header.html %}
     {% include navigation.html %}
 
-    {{ content }}
+    <section class="sliders" style="background-image: url(/assets/images/sliderbg.jpeg); height: 200px;">
+      <h1 class="pagehead">{{ page.title }}</h1>
+    </section>
+
+    <section class="text-sec" style="background-color: #172a3a;">
+      {{ content }}
+    </section>
     
     {% include footer.html %}
   </body>
